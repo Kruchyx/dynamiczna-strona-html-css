@@ -10,7 +10,6 @@ body {
   color: #2c3e50;
 }
 
-/* HEADER */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -41,7 +40,6 @@ body {
   color: #e67e22;
 }
 
-/* HERO */
 .hero {
   padding: 80px 20px;
   text-align: center;
@@ -57,7 +55,6 @@ body {
   margin-top: 15px;
 }
 
-/* BUTTON */
 .btn-primary {
   background: #e67e22;
   color: white;
@@ -74,7 +71,6 @@ body {
   background: #d35400;
 }
 
-/* SEKCJE */
 .features,
 .pricing,
 .contact {
@@ -82,7 +78,6 @@ body {
   text-align: center;
 }
 
-/* GRID */
 .features-grid,
 .pricing-grid {
   display: grid;
@@ -95,14 +90,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* KARTY */
 .feature-card,
 .pricing-card {
   background: #ffffff;
   padding: 20px;
   border-radius: 6px;
-
-  /* ANIMACJA */
   transition: 0.3s;
   opacity: 0;
   transform: translateY(10px);
@@ -119,7 +111,6 @@ body {
   border: 2px solid #e67e22;
 }
 
-/* FOOTER */
 .site-footer {
   background: #2c3e50;
   color: white;
@@ -127,10 +118,31 @@ body {
   padding: 20px;
 }
 
-/* ANIMACJA */
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
   }
 }
