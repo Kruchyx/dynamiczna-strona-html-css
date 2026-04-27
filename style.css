@@ -34,6 +34,11 @@ body {
 .main-nav a {
   text-decoration: none;
   color: #2c3e50;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  color: #e67e22;
 }
 
 /* HERO */
@@ -61,6 +66,12 @@ body {
   display: inline-block;
   margin-top: 20px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  background: #d35400;
 }
 
 /* SEKCJE */
@@ -90,6 +101,18 @@ body {
   background: #ffffff;
   padding: 20px;
   border-radius: 6px;
+
+  /* ANIMACJA */
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.feature-card:hover,
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .highlight {
@@ -102,4 +125,12 @@ body {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+/* ANIMACJA */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
