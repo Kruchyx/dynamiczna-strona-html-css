@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #2c3e50;
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 15px;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: #e67e22;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/* SEKCJE */
+.features,
+.pricing,
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* GRID */
+.features-grid,
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.pricing-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* KARTY */
+.feature-card,
+.pricing-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.highlight {
+  border: 2px solid #e67e22;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
